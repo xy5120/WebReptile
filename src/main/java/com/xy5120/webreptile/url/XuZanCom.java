@@ -1,4 +1,4 @@
-package com.xy5120.url;
+package com.xy5120.webreptile.url;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -16,7 +16,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.xy5120.util.FileUtils;
+import com.xy5120.webreptile.util.FileUtils;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.CharsetUtil;
