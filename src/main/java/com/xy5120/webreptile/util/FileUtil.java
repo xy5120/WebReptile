@@ -12,7 +12,7 @@ import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class FileUtils {
+public class FileUtil {
 	
 	
 	//字节数组容量

@@ -1,9 +1,6 @@
 package com.xy5120.webreptile.url;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,9 +13,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.xy5120.webreptile.util.FileUtils;
+import com.xy5120.webreptile.util.FileUtil;
 
-import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpUtil;
@@ -118,8 +114,8 @@ public class XuZanCom {
 		}
 		String path=null;
 		for (String url : list) {
-			path=downPackage+File.separator+FileUtils.getFileName(url);
-			boolean flog = FileUtils.downURLFile(url,path );
+			path=downPackage+File.separator+FileUtil.getFileName(url);
+			boolean flog = FileUtil.downURLFile(url,path );
 			if(flog) {
 				System.out.println(path+"下载成功");
 			}else {
